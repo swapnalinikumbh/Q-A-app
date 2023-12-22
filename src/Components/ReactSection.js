@@ -1,15 +1,14 @@
-// ReactSection.js
 import React, { useState } from 'react';
 
 const ReactSection = () => {
   // Sample questions and answers data
   const reactQuestions = [
     {
-      question: 'What is React?',
+      question: '1.What is React?',
       answer: 'React is a JavaScript library for building user interfaces.',
     },
     {
-      question: 'What is JSX?',
+      question: '2.What is JSX?',
       answer: 'JSX is a syntax extension for JavaScript recommended for use with React. It looks similar to XML/HTML.',
     },
     // Add more questions and answers as needed
@@ -36,7 +35,7 @@ const ReactSection = () => {
             >
               {q.question}
             </div>
-            {expandedQuestion === index && <div className="">{q.answer}</div>}
+            {expandedQuestion === index && <div className="answer-container bg-light-blue text-dark p-3">{q.answer}</div>}
           </li>
         ))}
       </ul>

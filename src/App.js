@@ -1,4 +1,3 @@
-// App.js
 // import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
@@ -9,6 +8,7 @@ import ReduxSection from './Components/ReduxSection';
 import JavaScriptSection from './Components/JavaScriptSection';
 import HTMLSection from './Components/HTMLSection';
 import CSSSection from './Components/CSSSection';
+import NonTech from "./Components/NonTech";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
             <Link to="/" className="navbar-brand">
-              Dashboard
+              Q & A
             </Link>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
@@ -46,6 +46,11 @@ function App() {
                     CSS
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/non-tech" className="nav-link">
+                    Non Tech
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -58,7 +63,15 @@ function App() {
           <Route path="/javascript" element={<JavaScriptSection />} />
           <Route path="/html" element={<HTMLSection />} />
           <Route path="/css" element={<CSSSection />} />
+          <Route path="/non-tech" element={<NonTech/>}/>
         </Routes>
+
+        {/* Footer Section */}
+        <footer className="footer fixed-bottom py-3 bg-light">
+          <div className="container">
+            <span className="text-muted">copyright Q & A</span>
+          </div>
+        </footer>
       </Router>
     </div>
   );
