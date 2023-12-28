@@ -84,7 +84,7 @@ const HTMLSection = () => {
           CSS Styles: We can apply CSS styles directly to SVG elements, making it easy to control their appearance.
           Accessibility: SVG is inherently accessible and can be easily navigated by screen readers, making it suitable for creating accessible graphics and data visualizations.
           Text and Shapes: SVG supports the rendering of text and various shapes, making it versatile for creating icons, charts, and diagrams.
-          <br /><br/>
+          <br /><br />
           <strong>HTML5 Canvas:</strong>Raster Graphics: Canvas is based on raster graphics, meaning that we are essentially drawing pixel by pixel on a canvas. Once drawn, it's not straightforward to modify individual elements.
           Resolution-Dependent: Canvas drawings are resolution-dependent. If we want to create sharp graphics on high-density displays, we must manage scaling yourself.
           No DOM Elements: Canvas graphics do not become part of the DOM. Everything is drawn directly onto a bitmap, and we cannot directly interact with individual drawn elements using the DOM.

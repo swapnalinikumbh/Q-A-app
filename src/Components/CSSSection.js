@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const CSSSection = () => {
   const cssQuestions = [
     {
-      question: '1.	Css opacitys ?',
+      question: '1.	Css opacity ?',
       answer: 'In CSS, the opacity property is used to control the transparency of an element, such as text, images, or entire containers. It accepts a value between 0 (completely transparent) and 1 (completely opaque).',
     },
     {
@@ -108,11 +108,11 @@ const CSSSection = () => {
       question: '11.	Explain css box module?',
       answer: (
         <>
-        The CSS Box Model is a fundamental concept in web design and layout. It describes how elements on a web page are visually represented and how their dimensions and spacing are calculated. <br/>
-        <strong>Content: </strong>The innermost box represents the content of the element, such as text, images, or other HTML elements. This is the area where the actual content of the element is displayed.<br/>
-        <strong>Padding: </strong>The padding is the space between the content and the element's border. It is used to create space around the content and is controlled using the padding property in CSS.<br/>
-        <strong>Border: </strong>The border is a line that surrounds the padding and content. It helps visually separate the element from its surroundings and is controlled using the border property in CSS.<br/>
-        <strong>Margin:</strong>The margin is the space outside the border that separates one element from its neighboring elements. It controls the spacing between elements on a webpage and is specified using the margin property in CSS.
+          The CSS Box Model is a fundamental concept in web design and layout. It describes how elements on a web page are visually represented and how their dimensions and spacing are calculated. <br />
+          <strong>Content: </strong>The innermost box represents the content of the element, such as text, images, or other HTML elements. This is the area where the actual content of the element is displayed.<br />
+          <strong>Padding: </strong>The padding is the space between the content and the element's border. It is used to create space around the content and is controlled using the padding property in CSS.<br />
+          <strong>Border: </strong>The border is a line that surrounds the padding and content. It helps visually separate the element from its surroundings and is controlled using the border property in CSS.<br />
+          <strong>Margin:</strong>The margin is the space outside the border that separates one element from its neighboring elements. It controls the spacing between elements on a webpage and is specified using the margin property in CSS.
         </>
       ),
     },
@@ -140,7 +140,7 @@ const CSSSection = () => {
       question: '17',
       answer: '',
     },
-    
+
     // Add more questions and answers as needed
   ];
 
