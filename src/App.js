@@ -9,14 +9,17 @@ import JavaScriptSection from './Components/JavaScriptSection';
 import HTMLSection from './Components/HTMLSection';
 import CSSSection from './Components/CSSSection';
 import NonTech from "./Components/NonTech";
+import logoImage from "../src/logoQ.jpg";
+
 
 function App() {
   return (
     <div>
       <Router>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
           <div className="container">
             <Link to="/" className="navbar-brand">
+              <img src={logoImage} alt="Logo" className="logo" style={logoStyle} />
               Q & A
             </Link>
             <div className="collapse navbar-collapse" id="navbarNav">
@@ -55,7 +58,8 @@ function App() {
             </div>
           </div>
         </nav>
-
+        
+        {/* Routing start */}
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/react" element={<ReactSection />} />
@@ -63,18 +67,28 @@ function App() {
           <Route path="/javascript" element={<JavaScriptSection />} />
           <Route path="/html" element={<HTMLSection />} />
           <Route path="/css" element={<CSSSection />} />
-          <Route path="/non-tech" element={<NonTech/>}/>
+          <Route path="/non-tech" element={<NonTech />} />
         </Routes>
 
         {/* Footer Section */}
-        <footer className="footer fixed-bottom py-3 bg-light">
+        <footer className="footer py-3 bg-light">
           <div className="container">
-            <span className="text-muted">copyright Q & A</span>
+            <span className="text-muted">
+              <img src={logoImage} alt="Logo" className="logo" style={copyrightStyle} />
+              &copy; Q & A</span>
           </div>
         </footer>
       </Router>
     </div>
   );
 }
-
+const logoStyle = {
+  maxWidth: '40px', // Adjust the size as needed
+  marginRight: '10px', // Add some margin for spacing
+};
+const copyrightStyle = {
+  maxWidth: '30px', // Adjust the size as needed
+  marginRight: '10px', // Add some margin for spacing
+  borderRadius: '95%', // Make the logo round
+};
 export default App;

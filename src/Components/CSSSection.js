@@ -154,7 +154,7 @@ const CSSSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">CSS Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">CSS Section</h2>
       <ul className="list-group">
         {cssQuestions.map((q, index) => (
           <li key={index} className="list-group-item">

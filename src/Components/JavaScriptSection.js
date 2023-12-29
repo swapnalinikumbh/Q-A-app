@@ -376,7 +376,7 @@ const JavaScriptSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">JavaScript Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">JavaScript Section</h2>
       <ul className="list-group">
         {javaScriptQuestions.map((q, index) => (
           <li key={index} className="list-group-item">

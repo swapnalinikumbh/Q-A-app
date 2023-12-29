@@ -28,7 +28,7 @@ const ReactSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">ReactJS Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">ReactJS Section</h2>
       <ul className="list-group">
         {reactQuestions.map((q, index) => (
           <li key={index} className="list-group-item">

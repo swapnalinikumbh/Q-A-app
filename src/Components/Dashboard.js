@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Dashboard = () => {
   return (
     <div className="container mt-5"> {/* Use Bootstrap container class */}
-      <h2>Dashboard</h2>
+      <h2 style={{ marginBottom: '1rem', marginTop: '7rem' }}>Dashboard</h2>
       <ul className="list-group"> {/* Use Bootstrap list-group class */}
         <li className="list-group-item">
           <Link to="/react">ReactJS</Link>

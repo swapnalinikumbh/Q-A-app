@@ -267,7 +267,7 @@ const NonTech = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">Non Tech Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">Non Tech Section</h2>
       <ul className="list-group">
         {nonTechQuestions.map((q, index) => (
           <li key={index} className="list-group-item">

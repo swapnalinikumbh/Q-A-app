@@ -112,7 +112,7 @@ const HTMLSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">HTML Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">HTML Section</h2>
       <ul className="list-group">
         {htmlQuestions.map((q, index) => (
           <li key={index} className="list-group-item">
