@@ -23,15 +23,22 @@ const dashStyle = {
   borderRadius: '60%', // Make the logo round
 };
 
+const linkStyle = {
+  textDecoration: 'none', // Remove underline from the link
+  color: 'black', // Set the text color
+  fontSize: '20px', // Set the font size
+  fontFamily: 'Arial, sans-serif',
+};
+
 const Dashboard = () => {
   return (
     <div className="container mt-5">
       <h2 style={{ marginBottom: '1rem', marginTop: '7rem' }}>Dashboard</h2>
       <ul className="list-group">
         {topics.map((topic) => (
-          <li key={topic.id} className="list-group-item">
+          <li key={topic.id} className="list-group-item justify-content-between align-items-center">
             <img src={topic.image} alt={`${topic.name} Logo`} className="logo" style={dashStyle} />
-            <Link to={topic.link}>{topic.name}</Link>
+            <Link to={topic.link} style={linkStyle}>{topic.name}</Link>
           </li>
         ))}
       </ul>

@@ -118,7 +118,7 @@ const HTMLSection = () => {
           <li key={index} className="list-group-item">
             <div
               onClick={() => toggleQuestion(index)}
-              style={{ cursor: 'pointer', marginBottom: '8px' }}
+              style={{ cursor: 'pointer', marginBottom: '8px', fontSize: '18px' }}
               className="font-weight-bold"
             >
               {q.question}
