@@ -1,22 +1,7 @@
 import React, { useState } from 'react';
+import { reactQuestions } from './ReactData';
 
 const ReactSection = () => {
-  // Sample questions and answers data
-  const reactQuestions = [
-    {
-      question: '1.What is React?',
-      answer: 'React is a JavaScript library for building user interfaces.',
-    },
-    {
-      question: '2.What is JSX?',
-      answer: 'JSX is a syntax extension for JavaScript recommended for use with React. It looks similar to XML/HTML.',
-    },
-    {
-      question: '3',
-      answer: '',
-    },
-    // Add more questions and answers as needed
-  ];
 
   // State to manage which question is currently expanded
   const [expandedQuestion, setExpandedQuestion] = useState(null);

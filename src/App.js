@@ -71,7 +71,7 @@ const App = () => (
         <div className="container">
           <span className="text-muted">
             <img src={logoImage} alt="Logo" className="logo" style={copyrightStyle} />
-            &copy; Q & A
+            Copyright &copy; Q & A. All Rights Reserved.
           </span>
         </div>
       </footer>
