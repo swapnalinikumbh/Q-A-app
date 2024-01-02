@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import react from '../../src/reactsymbol.jpg';
-import redux from '../../src/reduxsymbol.png';
-import javascript from '../../src/jssymbol.png';
-import html from '../../src/htmlsymbol.jpg';
-import css from '../../src/csssymbol.png';
-import nonTech from '../../src/nontechsymbol.png';
+import react from '../../src/Components/Images/reactsymbol.jpg';
+import redux from '../../src/Components/Images/reduxsymbol.png';
+import javascript from '../../src/Components/Images/jssymbol.png';
+import html from '../../src/Components/Images/htmlsymbol.jpg';
+import css from '../../src/Components/Images/csssymbol.png';
+import nonTech from '../../src/Components/Images/nontechsymbol.png';
 
 const topics = [
   { id: 1, name: 'ReactJS', image: react, link: '/react' },

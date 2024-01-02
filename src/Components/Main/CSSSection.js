@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { reduxQuestions } from './ReduxData';
+import { cssQuestions } from '../Data/CssData';
 
-const ReduxSection = () => {
-  
+const CSSSection = () => {
+
   // State to manage which question is currently expanded
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
@@ -13,13 +13,13 @@ const ReduxSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 style={{ marginTop: '7rem' }} className="mb-4">Redux Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">CSS Section</h2>
       <ul className="list-group">
-        {reduxQuestions.map((q, index) => (
+        {cssQuestions.map((q, index) => (
           <li key={index} className="list-group-item">
             <div
               onClick={() => toggleQuestion(index)}
-              style={{ cursor: 'pointer', marginBottom: '8px',fontSize: '18px', }}
+              style={{ cursor: 'pointer', marginBottom: '8px', fontSize: '18px', }}
               className="font-weight-bold"
             >
               {q.question}
@@ -32,4 +32,4 @@ const ReduxSection = () => {
   );
 }
 
-export default ReduxSection
+export default CSSSection

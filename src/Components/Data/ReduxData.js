@@ -128,57 +128,63 @@ export const reduxQuestions = [
         answer: (
             <>
                 useState and Redux are both state management solutions in React. <br /><br />
-                <strong>Local vs. Global State:</strong><br/>
-                useState: useState is a React Hook that manages local component-level state. It's used to store and manage state within a single component.
-                Redux: Redux is a global state management library. It allows us to manage application-level state that can be accessed and modified by multiple components throughout  application.<br/><br/>
-                <strong>Scope:</strong>
-                useState: State managed by useState is limited to the component where it's defined. It's isolated and not accessible to other components unless explicitly passed down as props.
-                Redux: Redux state is global and can be accessed by any component in application as long as we connect that component to the Redux store.<br/><br/>
-                <strong>Complexity and Scalability:</strong>
-                useState: Suitable for managing simple, local component state. It's straightforward and doesn't introduce significant complexity.
-                Redux: Best suited for managing complex application-wide state with many components that need to share and interact with the same data. Redux can handle the complexity of large-scale applications.<br/><br/>
-                <strong>Communication Between Components:</strong>
-                useState: Communication between components that use useState typically relies on prop drilling (passing state down through component hierarchies). This can become cumbersome in deeply nested component trees.
-                Redux: Redux provides a centralized store that facilitates communication between components without the need for extensive prop passing. Any connected component can Faccess the Redux store directly.<br/><br/>
-                <strong>Predictability and Debugging:</strong>
-                useState: Debugging local state is relatively straightforward, as it's confined to a single component. However, it can become challenging to trace state changes in larger applications.
-                Redux: Redux provides a clear and predictable way to manage and debug state changes. Actions and reducers make it easy to track how and when state changes occur.<br/><br/>
-                <strong>Middleware and Asynchronous Actions:</strong>
-                useState: Designed for managing synchronous state within a component. Handling asynchronous operations can be more challenging and often requires additional libraries like useEffect.
-                Redux: Redux has built-in support for middleware, making it suitable for managing asynchronous actions, such as network requests or complex state updates.<br/><br/>
+                <strong>Local vs. Global State:</strong><br />
+                <strong>useState: </strong>useState is a React Hook that manages local component-level state. It's used to store and manage state within a single component.<br/>
+                <strong>Redux:</strong> Redux is a global state management library. It allows us to manage application-level state that can be accessed and modified by multiple components throughout  application.<br /><br />
+                <strong>Scope:</strong><br/>
+                <strong>useState: </strong>State managed by useState is limited to the component where it's defined. It's isolated and not accessible to other components unless explicitly passed down as props.<br/>
+                <strong>Redux:</strong> Redux state is global and can be accessed by any component in application as long as we connect that component to the Redux store.<br /><br />
+                <strong>Complexity and Scalability:</strong><br/>
+                <strong>useState: </strong>Suitable for managing simple, local component state. It's straightforward and doesn't introduce significant complexity.<br/>
+                <strong>Redux:</strong> Best suited for managing complex application-wide state with many components that need to share and interact with the same data. Redux can handle the complexity of large-scale applications.<br /><br />
+                <strong>Communication Between Components:</strong><br/>
+                <strong>useState:</strong> Communication between components that use useState typically relies on prop drilling (passing state down through component hierarchies). This can become cumbersome in deeply nested component trees.<br/>
+                <strong>Redux:</strong> Redux provides a centralized store that facilitates communication between components without the need for extensive prop passing. Any connected component can Faccess the Redux store directly.<br /><br />
+                <strong>Predictability and Debugging:</strong><br/>
+                <strong>useState: </strong>Debugging local state is relatively straightforward, as it's confined to a single component. However, it can become challenging to trace state changes in larger applications.<br/>
+                <strong>Redux:</strong> Redux provides a clear and predictable way to manage and debug state changes. Actions and reducers make it easy to track how and when state changes occur.<br /><br />
+                <strong>Middleware and Asynchronous Actions:</strong><br/>
+                <strong>useState:</strong> Designed for managing synchronous state within a component. Handling asynchronous operations can be more challenging and often requires additional libraries like useEffect.<br/>
+                <strong>Redux:</strong> Redux has built-in support for middleware, making it suitable for managing asynchronous actions, such as network requests or complex state updates.<br /><br />
                 -In summary, useState is ideal for managing local state within individual components and is suitable for simpler applications or components where global state management is unnecessary. Redux, on the other hand, is a powerful tool for managing complex global state in large-scale React applications, providing centralized state management, predictability, and communication between components. The choice between the two depends on the specific needs and complexity of project.
 
             </>
         ),
     },
     {
-        question: '11',
+        question: '11.	How to integrate redux with react?',
         answer: (
             <>
-
+                Redux is a state management library that helps manage the global state of application<br /><br />
+                <strong>Install Redux and React-Redux</strong><br />
+                <strong>Create a Redux Store:</strong>
+                In project, create a Redux store. The store holds the global state of application.<br /><br />
+                <strong>Create Reducers:</strong>
+                Define reducers to manage different parts of application’s state. Reducers specify how the state should change in response to actions.<br /><br />
+                <strong>Create Actions:</strong>
+                Actions are objects that describe changes to application's state. Define action creators to create these action objects.<br /><br />
+                <strong>Create Reducers:</strong>
+                Implement reducers to handle these actions and update the state accordingly.<br /><br />
+                <strong>Connect Redux to React Components:</strong>
+                Use the react-redux library to connect  React components to the Redux store. We can use the connect function or hooks (e.g., useSelector and useDispatch) to access the store and dispatch actions.<br /><br />
+                <strong>Provide the Redux Store:</strong>
+                In application's entry point (usually index.js), wrap entire application with the Provider component from react-redux to provide access to the Redux store.
             </>
         ),
     },
     {
-        question: '12',
+        question: '12.	Redux change to context api is possible?',
         answer: (
             <>
-
+                Yes, it is possible to replace Redux with the Context API in your React applications.<br/><br/>
+                <strong>Create Context:</strong> Define a context using the React.createContext function. This context will serve as the central place to store and provide application-wide data.<br/><br/>
+                <strong>Provider Component: </strong>Create a provider component that wraps application or the part of application that needs access to the shared state. This provider will use the context to provide data to its child components.<br/><br/>
+                <strong>Use Context:</strong> In components that need access to the shared state, use the useContext hook to access the context and its data.<br/><br/>
+                <strong>Actions and Reducers: </strong>Instead of Redux actions and reducers, we can create functions within your context provider to modify the state. These functions will act as the actions in Redux, and the state itself is managed within the context provider.<br/><br/>
+                <strong>Migrate Components: </strong>Update existing components to use the Context API instead of Redux for state management.<br/><br/>
+                <strong>Remove Redux:</strong> Remove Redux-related dependencies and code from project once we have fully migrated to the Context API.
             </>
         ),
-    },
-    {
-        question: '',
-        answer: '',
-    },
-    {
-        question: '',
-        answer: '',
-    },
-
-    {
-        question: '',
-        answer: '',
     },
     {
         question: '',

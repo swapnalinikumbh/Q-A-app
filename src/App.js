@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dashboard from './Components/Dashboard';
-import ReactSection from './Components/ReactSection';
-import ReduxSection from './Components/ReduxSection';
-import JavaScriptSection from './Components/JavaScriptSection';
-import HTMLSection from './Components/HTMLSection';
-import CSSSection from './Components/CSSSection';
-import NonTech from "./Components/NonTech";
-import logoImage from "../src/logoQ.jpg";
+import ReactSection from './Components/Main/ReactSection';
+import ReduxSection from './Components/Main/ReduxSection';
+import JavaScriptSection from './Components/Main/JavaScriptSection';
+import HTMLSection from './Components/Main/HTMLSection';
+import CSSSection from './Components/Main/CSSSection';
+import NonTech from "./Components/Main/NonTech";
+import logoImage from "../src/Components/Images/logoQ.jpg";
 
 const topics = [
   { path: '/', label: 'Q & A', exact: true },

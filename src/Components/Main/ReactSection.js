@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { cssQuestions } from './CssData';
+import React, { useState } from 'react';
+import { reactQuestions } from '../Data/ReactData';
 
-const CSSSection = () => {
+const ReactSection = () => {
 
   // State to manage which question is currently expanded
   const [expandedQuestion, setExpandedQuestion] = useState(null);
@@ -13,13 +13,13 @@ const CSSSection = () => {
 
   return (
     <div className="container mt-5">
-      <h2 style={{ marginTop: '7rem' }} className="mb-4">CSS Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">ReactJS Section</h2>
       <ul className="list-group">
-        {cssQuestions.map((q, index) => (
+        {reactQuestions.map((q, index) => (
           <li key={index} className="list-group-item">
             <div
               onClick={() => toggleQuestion(index)}
-              style={{ cursor: 'pointer', marginBottom: '8px', fontSize: '18px', }}
+              style={{ cursor: 'pointer', marginBottom: '8px',fontSize: '18px', }}
               className="font-weight-bold"
             >
               {q.question}
@@ -30,6 +30,6 @@ const CSSSection = () => {
       </ul>
     </div>
   );
-}
+};
 
-export default CSSSection
+export default ReactSection;

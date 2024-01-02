@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { nonTechQuestions } from './NonData';
-const NonTech = () => {
+import { reduxQuestions } from '../Data/ReduxData';
 
-
+const ReduxSection = () => {
+  
   // State to manage which question is currently expanded
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
@@ -13,13 +13,13 @@ const NonTech = () => {
 
   return (
     <div className="container mt-5">
-      <h2 style={{ marginTop: '7rem' }} className="mb-4">Non Tech Section</h2>
+      <h2 style={{ marginTop: '7rem' }} className="mb-4">Redux Section</h2>
       <ul className="list-group">
-        {nonTechQuestions.map((q, index) => (
+        {reduxQuestions.map((q, index) => (
           <li key={index} className="list-group-item">
             <div
               onClick={() => toggleQuestion(index)}
-              style={{ cursor: 'pointer', marginBottom: '8px', fontSize: '18px', }}
+              style={{ cursor: 'pointer', marginBottom: '8px',fontSize: '18px', }}
               className="font-weight-bold"
             >
               {q.question}
@@ -32,4 +32,4 @@ const NonTech = () => {
   );
 }
 
-export default NonTech
+export default ReduxSection
