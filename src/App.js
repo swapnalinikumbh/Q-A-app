@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import Dashboard from './Components/Dashboard';
 import ReactSection from './Components/Main/ReactSection';
 import ReduxSection from './Components/Main/ReduxSection';
@@ -68,13 +69,25 @@ const App = () => (
       </Routes>
 
       <footer className="footer py-3 bg-light">
-        <div className="container">
-          <span className="text-muted">
-            <img src={logoImage} alt="Logo" className="logo" style={copyrightStyle} />
-            Copyright &copy; Q & A. All Rights Reserved.
-          </span>
+      <div className="container d-flex justify-content-between align-items-center">
+        <span className="text-muted">
+          <img src={logoImage} alt="Logo" className="logo" style={copyrightStyle} />
+          Copyright &copy; Q & A. All Rights Reserved.
+        </span>
+        <div className="social-icons">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted mx-2">
+            <FaGithub size={20} />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted mx-2">
+            <FaLinkedin size={20} />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted mx-2">
+            <FaFacebook size={20} />
+          </a>
+          {/* Add other social media icons as needed */}
         </div>
-      </footer>
+      </div>
+    </footer>
     </Router>
   </div>
 );
