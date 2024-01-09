@@ -1,6 +1,6 @@
 export const nonTechQuestions = [
     {
-      question: '1.	Gits command ??',
+      question: '1.	Git command ??',
       answer: (
         <>
           <strong>git init: </strong>Initializes a new Git repository in the current directory.<br /><br />
@@ -41,7 +41,7 @@ export const nonTechQuestions = [
       ),
     },
     {
-      question: '4.	SDLCs in react developer?',
+      question: '4.	SDLC in react developer?',
       answer: (
         <>
           The Software Development Life Cycle (SDLC) is a framework that defines the processes and activities involved in developing software applications.Agile methodologies, such as Scrum or Kanban, are often employed in React development to enable flexibility, collaboration, and continuous improvement throughout the SDLC phases.<br /> <br />
@@ -56,7 +56,7 @@ export const nonTechQuestions = [
       ),
     },
     {
-      question: '5.	Difference between git and githubs?',
+      question: '5.	Difference between git and github?',
       answer: (
         <>
           Git and GitHub are related but distinct entities in the world of version control and software development. Git is a distributed version control system that allows developers to track changes locally, while GitHub is a web-based hosting platform built around Git that provides collaboration features, project management tools, and a centralized location for sharing and managing Git repositories.<br /><br />
@@ -81,7 +81,7 @@ export const nonTechQuestions = [
       ),
     },
     {
-      question: '6.	Agiles scrum?',
+      question: '6.	Agile scrum?',
       answer: (
         <>
           Agile Scrum is a popular framework for managing and organizing the development of complex projects, particularly in the field of software development. It emphasizes iterative and incremental delivery, collaboration, and flexibility. <br /><br />
@@ -110,7 +110,7 @@ export const nonTechQuestions = [
       ),
     },
     {
-      question: '7.	How do we handle day-to-day issues and performance tuning in applications?',
+      question: '7.	How do we handle day-to-day issues and performance tuning in application?',
       answer: (
         <>
           <strong>Day-to-Day Issue Handling:</strong><br />
@@ -134,7 +134,7 @@ export const nonTechQuestions = [
       ),
     },
     {
-      question: '8.	Can we describe a project where we had to work with JIRAs for project management? What was role and how did we use JIRA to track progress?',
+      question: '8.	Can you describe a project where you had to work with JIRAs for project management? What was role and how did we use JIRA to track progress?',
       answer: (
         <>
           I've had the opportunity to work on several projects where JIRA was the primary project management tool. One notable project where I used JIRA extensively was [Project Name]. In this project, I played the role of "Software Developer" and I relied on JIRA for efficient project tracking and management.JIRA played a pivotal role in our project's success by providing a centralized platform for project management, task tracking, and collaboration. It helped us stay organized, meet sprint goals, and deliver high-quality software within the project timeline.<br /><br />
@@ -213,7 +213,7 @@ export const nonTechQuestions = [
       ),
     },
     {
-      question: '12.	Difference between npxs and npms?',
+      question: '12.	Difference between npx and npm?',
       answer: (
         <>
           npx and npm are both command-line tools in the Node.js ecosystem<br /><br />
